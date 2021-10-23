@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Signup.js">  </script>
+    <title>signup page</title>
+</head>
+<body>
+   
+     <form class="signup-form">
+         <div class="form-header">
+             <h1> signup </h1>
+         </div>
+
+
+         <div class="form-body" action="login.html">
+             
+             <div class="form-group">
+                 <label for="firstname" class="label-title">First name* </label>
+                 <input type="text" id="firstname" class="form-input" placeholder="enter your name">
+                 <p style="color: red;" id="firstname_error"> </p>
+             </div>  
+             
+             <div class="form-group">
+                <label for="lastname" class="label-title">Last name* </label>
+                <input type="text" id="lastname" class="form-input" placeholder="enter your last name">
+                
+            </div> 
+            
+            <div class="form-group">
+                <label for="email" class="label-title">email* </label>
+                <input type="email" id="email" class="form-input" placeholder="enter your email">
+                <p style="color: red;" id="email_error"> </p>
+            </div>  
+
+            <div class="form-group">
+                <label for="phone" class="label-title">phone* </label>
+                <input type="text" id="phone" class="form-input" placeholder="enter your phone number">
+                <p style="color: red;" id="phone_error"> </p>
+            </div>  
+            
+            <div class="horizontal-group">
+                <div class="form-group left">
+                    <label for="password" class="label-title">password*</label>
+                    <input type="password" id="password" class="form-input" placeholder="enter password">
+
+                </div>
+                <div class="form-group right">
+                    <label for="confirm_password" class="label-title">confirm password*</label>
+                    <input type="password" id="confirm_password" class="form-input" placeholder="enter password again">
+
+                </div>
+                
+                
+
+            </div> 
+ <div class="form-group"> 
+ <p style="color: red;" id="password_error"> </p>
+ </div>
+</div>
+<div class="form-footer"> 
+    <span>*requird </span>
+    <button type="submit" class="btn" onclick="return validation();"> create </button>
+</div>
+</form>
+</body>
+</html>
+
+
